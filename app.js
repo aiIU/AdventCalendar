@@ -1,16 +1,11 @@
 const cards = document.querySelectorAll('.calendar-card');
 let test = cards.length;
 console.log('--->', cards.length);
-
-//Cookies.set('cards', 'countCards', { expires: 7 })
-
 let flippedCard = false;
 
 function getRandomInt(upperBound) {
     return Math.floor(Math.random() * upperBound)
 }
-
-
 
 let imageController = {
     imgs:['/back/background_card/cat.png', '/back/background_card/fog.png', 'back/background_card/cat_gift.png','back/background_card/classic_gift.png', 'back/background_card/card_sloth.png' ],
@@ -44,7 +39,7 @@ let imageController = {
 };
 
 //[{id:1, isOpened:1}, []]
-//чтение из локал сторэдж 
+//чтение из локал сторэдж
 const readFromLocalStore = () => {
     const currentLocalStorage = JSON.parse(localStorage.getItem('cardsInfo'))
     if(currentLocalStorage) {

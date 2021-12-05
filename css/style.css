@@ -1,10 +1,8 @@
 html{
   box-sizing: border-box;
-  /* min-height: 100%; */
 }
 
 body{
-  /* height:300vh; */
   font-family: 'Abril Fatface', cursive;
   font-style: normal;
   font-size: 40px;
@@ -12,17 +10,7 @@ body{
   font-weight: bold;
   color:rgb(255, 255, 255);
   -webkit-text-stroke: 1px rgb(4, 44, 21);
-  /* position: relative; */
 }
-
-/* .intro{
-    height: 100vh;
-    background: url(/back/background_main/head_back.gif) no-repeat; 
-    background-size: cover;
-    background-attachment: scroll;
-    position:inherit;
-
-  } */
 .main {
   background: url(/back/background_main/main_back.gif) no-repeat;
   background-attachment: scroll;
@@ -32,18 +20,15 @@ body{
 }
 .wrapper_calendar {
   max-height: 100vh;
-  /* overflow-y: auto; */
   display: grid;
   padding: 20px;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-columns: 120px;
   gap: 10px;
-  /* background-image:url() no-repeat;*/
   box-shadow: 0px 2px 20px rgba(4, 37, 121, 0.16);
   background-position: bottom center;
   margin-right: 0 auto;
   background-size: cover;
-  /* max-width: 650px; */
   margin: 0 auto;
   height: 650px;
   width: 650px;
@@ -63,7 +48,6 @@ body{
 
 }
 .calendar-card.flip {
-  /* background-image: url(/back/bacground_card/fog.png); */
   transform: scaleX(-1) scaleX(-1);
 }
 .calendar-card:active {
